@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form method="post" action='https://register-demo.freecodecamp.org' id="survey-form">
+        <fieldset>
+            <label for="first-name" id="name-label">Enter Your First Name: <input placeholder="first-name" id="name"
+                    type="text" required /></label>
+            <label for="last-name">Enter Your Last Name: <input placeholder="last-name" id="last-name" type="text"
+                    required /></label>
+            <label for="email" id="email-label">Enter Your Email: <input placeholder="email" id="email" type="email"
+                    required /></label>
+            <label for="new-password">Create a New Password: <input id="new-password" type="password"
+                    pattern="[a-z0-5]{8,}" required /></label>
+            <label for="optional-details">Optional-details: <textarea id="optional-details"
+                    placeholder="enter your details (optional)" rows="4" cols="50">
+</textarea></label>
+        </fieldset>
+        <fieldset>
+            <label for="personal-account"><input id="personal-account" type="radio" value="Personal Account"
+                    name="account-type" /> Personal Account</label>
+            <label for="business-account"><input id="business-account" type="radio" value="Business Account"
+                    name="account-type" /> Business Account</label>
+            <label for="terms-and-conditions">
+                <input id="terms-and-conditions" type="checkbox" value="consent" required /> I accept the <a
+                    href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <label for="confirmation">
+                <input id="confirmation" type="checkbox" value="confirmation" required />All details are correct
+            </label>
+        </fieldset>
+        <fieldset>
+            <label>Upload a profile picture: <input type="file" /></label>
+            <label id="number-label">Input your age (years): <input placeholder="your age" id="number" type="number"
+                    min="13" max="120" /></label>
+            <label id="nationality">What is your nationality? <select id="dropdown">
+                    <option value="Indian">Indian</option>
+                    <option value="Other">Other</option>
+                </select></label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+    </form>
+</body>
+
+</html>
