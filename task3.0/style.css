@@ -29,7 +29,8 @@ img {
 .header {
   text-align: center;
   height: 15vh;
-  background-color: teal;
+  /* background-color: teal; */
+  background-image: url(ga.jpg);
 }
 
 .navbar {
@@ -78,10 +79,11 @@ img {
 }
 .header-content {
   background-image: url(ga.jpg);
-  color: antiquewhite;
+  color: aliceblue;
   height: 25vh;
   font-size: larger;
-  margin-top: 0;
+  margin-top:0;
+  padding: 10px;
 }
 .b4 {color: white;
     background-color: #525a51; 
